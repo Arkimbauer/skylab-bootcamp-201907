@@ -1,3 +1,8 @@
+var operA;
+var operB;
+var operacion;
+
+//variables de todos los botones
 
 var resultado = document.getElementById("input");
 var clear = document.getElementById("clear");
@@ -19,13 +24,62 @@ var zero = document.getElementById("zero");
 var decimal = document.getElementById("decimal");
 var equal = document.getElementById("equal");
 
+one.onclick = function(e){
+  resultado.textContent = resultado.textContent + '1';
+}
+two.onclick = function(e){
+  resultado.textContent = resultado.textContent + '2';
+}
+three.onclick = function(e){
+  resultado.textContent = resultado.textContent + '3';
+}
+four.onclick = function(e){
+  resultado.textContent = resultado.textContent + '4';
+}
+five.onclick = function(e){
+  resultado.textContent = resultado.textContent + '5';
+}
+six.onclick = function(e){
+  resultado.textContent = resultado.textContent + '6';
+}
+seven.onclick = function(e){
+  resultado.textContent = resultado.textContent + '7';
+}
+eight.onclick = function(e){
+  resultado.textContent = resultado.textContent + '8';
+}
+nine.onclick = function(e){
+  resultado.textContent = resultado.textContent + '9';
+}
+zero.onclick = function(e){
+  resultado.textContent = resultado.textContent + '0';
+}
 
 
 
-
-
-
-
+clear.onclick = function(e){
+  resetear();
+}
+plus.onclick = function(e){
+  operA = resultado.textContent;
+  operacion = '+'
+  clean();
+}
+min.onclick = function(e){
+  operA = resultado.textContent;
+  operacion = '-'
+  clean();
+}
+mult.onclick = function(e){
+  operA = resultado.textContent;
+  operacion = '*'
+  clean();
+}
+divide.onclick = function(e){
+  operA = resultado.textContent;
+  operacion = '/'
+  clean();
+}
 
 
 
