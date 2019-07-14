@@ -89,10 +89,11 @@ igual.onclick = function(e){
 }
 
 function limpiar(){
-  resultado.textContent = "";
+  resultado.textContent = "0";
 }
+
 function resetear(){
-  resultado.textContent = "";
+  resultado.textContent = "0";
   operandoa = 0;
   operandob = 0;
   operacion = "";
