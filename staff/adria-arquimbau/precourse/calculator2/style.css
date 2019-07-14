@@ -24,8 +24,8 @@ body {
     
   }
   
-  #input{
-      border-radius: 15px;
+  #resultado{
+    border-radius: 15px;
     padding: 20px;
     font-size: 30px;
     text-align: right;
