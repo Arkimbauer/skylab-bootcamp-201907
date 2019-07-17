@@ -46,20 +46,23 @@ function PP(){
     function question(){
 
             for (i=0; i < questions.length; i++){
-                Answer = prompt(questions[i].question + ' Introduce tu respuesta aqui:');
-                            if(Answer.toLowerCase() == questions[i].answer){  // habra que cambiar el status en 1 .
-                                alert('CORRECTO!'); 
-                                    questions[i].status = 1;
-                                    console.log(questions[i].status);
-                                } if(Answer.toLowerCase() == 'pasapalabra'){ //marcar de alguna manera el pasapalabra para que vuelva a preguntarlo en otor bucle etc...
-                                    
-                                    
-                                } else {
-                                    alert('INCORRECTO, vamos a por la siguiente pregunta.');
-                                    questions[i].status = 2;
-                                    console.log(questions[i].status);
-                            }           
+                if(questions[i].status > 0){
+                                   
+                        Answer = prompt(questions[i].question + ' Introduce tu respuesta aqui:');
 
+                                if(Answer.toLowerCase() == questions[i].answer){  // habra que cambiar el status en 1 .
+                                    alert('CORRECTO!'); 
+                                        questions[i].status = 1;
+                                        console.log(questions[i].status);
+                                    } if(Answer.toLowerCase() == 'pasapalabra'){ //marcar de alguna manera el pasapalabra para que vuelva a preguntarlo en otor bucle etc...
+                                        
+                                        
+                                    } else {
+                                        alert('INCORRECTO, vamos a por la siguiente pregunta.');
+                                        questions[i].status = false;
+                                        console.log(questions[i].status);
+                                }           
+                        }
             }
 
                
@@ -67,7 +70,7 @@ function PP(){
 
     function points(){
         for (var i = 0; i < questions.length; i++) {
-            if (questions[i].status > 0) {
+            if (questions[i].status > 0 ) {
                 puntuacion += 1;
             }
         }
