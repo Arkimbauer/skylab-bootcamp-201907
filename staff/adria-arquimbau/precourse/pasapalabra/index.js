@@ -44,32 +44,25 @@ function PP(){
     }
     //Iniciamos bucle con cada pregunta y su letra
     function question(){
-       for (let i = 0; i < questions.length; i++) {
-           
-           
-       }
 
-        for (i=0; i < questions.length; i++){
-            Answer = prompt(questions[i].question + ' Introduce tu respuesta aqui:');
+            for (i=0; i < questions.length; i++){
+                Answer = prompt(questions[i].question + ' Introduce tu respuesta aqui:');
+                            if(Answer.toLowerCase() == questions[i].answer){  // habra que cambiar el status en 1 .
+                                alert('CORRECTO!'); 
+                                    questions[i].status = 1;
+                                    console.log(questions[i].status);
+                                } if(Answer.toLowerCase() == 'pasapalabra'){ //marcar de alguna manera el pasapalabra para que vuelva a preguntarlo en otor bucle etc...
+                                    
+                                    
+                                } else {
+                                    alert('INCORRECTO, vamos a por la siguiente pregunta.');
+                                    questions[i].status = 2;
+                                    console.log(questions[i].status);
+                            }           
 
-                        if(Answer.toLowerCase() == questions[i].answer){  // habra que cambiar el status en 1 .
-                            alert('CORRECTO!'); 
-                                questions[i].status = 1;
-                                console.log(questions[i].status);
-                            } if(Answer.toLowerCase() == 'pasapalabra'){ //marcar de alguna manera el pasapalabra para que vuelva a preguntarlo en otor bucle etc...
-                                questions[i].pp = true;
-                            } else {
-                                alert('INCORRECTO, vamos a por la siguiente pregunta.');
-                                console.log(questions[i].status);
-                        }           
-        }
+            }
 
-                // for (let i = 0; i < questions.length; i++) {
-                //     if (questions[i].status > 0) {
-                        
-                //     }
-                    
-                // }
+               
     }
 
     function points(){
