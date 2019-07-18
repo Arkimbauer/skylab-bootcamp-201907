@@ -67,7 +67,6 @@ function PP(){
 
                
     }
-
     function points(){
         for (var i = 0; i < questions.length; i++) {
             if (questions[i].status > 0 ) {
