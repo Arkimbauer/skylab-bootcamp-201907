@@ -61,3 +61,10 @@ Users can:
 #### Admin
 ![](./images/admin-flow.png)
 
+
+
+### **Data Model**
+
+---
+
+![](./images/data-model.png)
