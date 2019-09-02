@@ -62,9 +62,13 @@ Users can:
 ![](./images/admin-flow.png)
 
 
-
-### **Data Model**
-
+## **Technical Description**
 ---
+
+### **Blocks**
+
+### **Components**
+
+### **React Components**
 
 ![](./images/data-model.png)
