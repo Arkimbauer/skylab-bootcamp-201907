@@ -9,56 +9,39 @@ A project by:
 
 ## **Introduction**
 ---
-KtTape Back Office is a (single page / multi page)? with React to facilitate online ordering of brand products between national suppliers and the continental supplier.
+KtTape Back Office is a multiple page with React to facilitate online ordering of branded products between national suppliers and the continental supplier.
+
+With this application we want to improve and facilitate the realization of online orders, with an automated stock update system.
 
 
 ## **Functional Description**
 ---
 Admin can:
 
-0.1
-+ Check the order history of each supplier. 
-+ Check current orders and be able to mark them as made or pending.
-+ Add new supplier account.
+0.5 (Actual Version)
++ Check the all orders
++ Check pending orders and be able to mark them as made or pending
++ Remove pending orders
 + Update your user profile
+
+1.0 (Actual Version)
++ Update orders
++ Add new client account
++ Update client account
++ Remove client account
 + Have access to documentation of interest of the brand.
-
-1.0
-
-+ Add new articles
-+ Remove articles
-+ Update articles
-+ Update / Remove suppliers
++ Update new documentation
 
 Users can:
 
-0.1
-
+0.5
 + Place online orders for each product with real stock.
-+ Check your current order and the history of your old orders.
++ Check your current order 
 + Update your user profile.
-+ Have access to documentation of interest of the brand.
 
 1.0
-
-+ 
----
-
-### Categories
-
-KtTape Pro Precut
-KtTape Pro Uncut
-KtTape Pro Limited Edition
-KtTape Pro Jumbo Precut
-KtTape Pro Jumbo Uncut
-
-KtTape Original Precut
-KtTape Original Uncut
-KtTape Original Jumbo Precut
-KtTape Original Jumbo Uncut
-KtTape Original Jumbo Edema
-
-Other Products
++ Have access to documentation of interest of the brand.
++ Check history orders and place order with a old model.
 
 ---
 
@@ -70,22 +53,37 @@ Other Products
 #### User
 ![](./images/user-cases.png)
 
-### Flows
+### Flowscharts
+
+#### Admin
+![](./images/admin-flow.png)
 
 #### User
 ![](./images/user-flow.png)
 
-#### Admin
-![](./images/admin-flow.png)
 
 
 ## **Technical Description**
 ---
 
 ### **Blocks**
-
+![](./images/blocks.png)
 ### **Components**
+![](./images/components.png)
 
-### **React Components**
+<!-- ### **React Components**
+ -->
 
+## **Data Model**
+---
 ![](./images/data-model.png)
+
+## **Code Coverage**
+---
+![Coverage](https://img.shields.io/badge/Coverage-95%25-green.svg)
+![](./images/test-api.png)
+
+## **Tecnologies**
+---
+
+Javascript, ReactJS, Node.js, Express, MongoDB & Mongoose.

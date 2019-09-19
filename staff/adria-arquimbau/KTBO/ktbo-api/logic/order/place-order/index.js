@@ -38,11 +38,7 @@ module.exports = function (userId) {
 
         let date = new Date()
 
-        date = date.toString()
-
-        
-        
-            
+        date = date.toString() 
             try {
                 
                 const  stockArticles = await Promise.all(user.cart.map(element => Article.findById(element.article)))
@@ -59,11 +55,9 @@ module.exports = function (userId) {
                     } else {
                          
                         stockArticles[index].quantity = stockArticles[index].quantity - cartArticle.quantity
-                      
-                    }
-                  
-                })
-                
+                     
+                    }                
+                })               
                 await Promise.all(stockArticles.map(article => article.save()))
                 const order = await Order.create({
                     date,
